@@ -19,6 +19,7 @@ namespace NeedMoreBeer.Domain
         /// <returns></returns>
         public static IServiceCollection AddDomain(this IServiceCollection sc)
         {
+            sc.AddTransient<IBreweryDbService, BreweryDbService>();
             sc.AddSingleton<IConfigurationProxy, ConfigurationProxy>();
             sc.AddTransient<IRestClient>(x => new RestClient());
 
