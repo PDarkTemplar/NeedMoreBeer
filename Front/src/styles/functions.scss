@@ -1,0 +1,58 @@
+@function calculate-rem($px) {
+    $rem: $px / $default-font-size;
+    @return $rem;
+}
+
+@function font-weight($key) {
+    @if map-has-key($font-weight, $key) {
+        @return map-get($font-weight, $key);
+    }
+
+    @warn "Unknown `#{$key}` in $font-weight.";
+    @return null;
+}
+
+@function font-size($key) {
+    @if map-has-key($font-size, $key) {
+        @return calculate-rem(map-get($font-size, $key)) + rem;
+    }
+
+    @warn "Unknown `#{$key}` in $font-size.";
+    @return null;
+}
+
+@function font-line-height($key) {
+    @if map-has-key($line-height, $key) {
+        @return calculate-rem(map-get($line-height, $key)) + rem;
+    }
+
+    @warn "Unknown `#{$key}` in $line-height.";
+    @return null;
+}
+
+@function border-radius(){
+    @return calculate-rem($border-radius) + rem;
+}
+
+@function color($key) {
+    $collection: map-collect(
+        $color-shadow,
+        $color-text,
+        $color-basic
+    );
+    @if map-has-key($collection, $key) {
+        @return map-get($collection, $key);
+    }
+
+    @warn "Unknown `#{$key}` in $colorCollection.";
+    @return null;
+}
+
+@function map-collect($maps...) {
+    $collection: ();
+
+    @each $map in $maps {
+        $collection: map-merge($collection, $map);
+    }
+    @return $collection;
+}

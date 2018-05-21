@@ -1,0 +1,30 @@
+@import 'imports.scss';
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font-family: $font-family-text;
+    color: color(text-700);
+    overflow: hidden;
+}
+
+#app {
+    display: flex;
+    flex: 1 1 auto;
+    background: color(white);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.bootstrap_content-wrap {
+    overflow: hidden;
+    flex: 1 1 auto;
+    display: flex;
+    position: relative;
+    z-index: -1;
+}

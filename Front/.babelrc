@@ -1,0 +1,50 @@
+{
+    "env": {
+        "app": {
+            "presets": [
+                "@babel/react",
+                ["@babel/preset-env", { "exclude": ["transform-regenerator"], "useBuiltIns": "usage", "modules": false }]
+            ],
+            "plugins": [
+                "./scripts/babel-transforms/convertActionToMobxFlow",
+                "./scripts/babel-transforms/stripTypesBabelPlugin",
+                "@babel/plugin-proposal-decorators",
+                ["@babel/plugin-proposal-class-properties", { "loose": true }],
+                "@babel/plugin-proposal-object-rest-spread",
+                "@babel/plugin-syntax-dynamic-import",
+                "@babel/plugin-transform-flow-strip-types",
+                "react-hot-loader/babel"
+            ]
+        },
+        "build": {
+            "presets": [
+                "@babel/react",
+                ["@babel/preset-env", { "exclude": ["transform-regenerator"] }]
+            ],
+            "plugins": [
+
+                "./scripts/babel-transforms/stripTypesBabelPlugin",
+                "@babel/plugin-proposal-decorators",
+                ["@babel/plugin-proposal-class-properties", { "loose": true }],
+                "@babel/plugin-proposal-object-rest-spread",
+                "@babel/plugin-syntax-dynamic-import",
+                "@babel/plugin-transform-flow-strip-types"
+            ]
+        },
+        "test": {
+            "presets": [
+                "@babel/react",
+                ["@babel/preset-env", { "exclude": ["transform-regenerator"] }]
+            ],
+            "plugins": [
+                "./scripts/babel-transforms/convertActionToMobxFlow",
+                "./scripts/babel-transforms/stripTypesBabelPlugin",
+                "@babel/plugin-proposal-decorators",
+                ["@babel/plugin-proposal-class-properties", { "loose": true }],
+                "@babel/plugin-proposal-object-rest-spread",
+                "@babel/plugin-syntax-dynamic-import",
+                "@babel/plugin-transform-flow-strip-types"
+            ]
+        }
+    }
+}

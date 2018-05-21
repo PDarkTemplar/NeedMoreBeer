@@ -1,0 +1,26 @@
+{
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "plaintext": "jade"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "editor.wordWrapColumn": 100,
+  "editor.renderWhitespace": "boundary",
+  "javascript.validate.enable": false,
+  "stylelint.enable": true,
+  "css.validate": false,
+  "scss.validate": false,
+  "javascript.format.enable": false,
+  "eslint.autoFixOnSave": true,
+  "editor.snippetSuggestions": "top",
+  "typescript.validate.enable": false,
+  "typescript.format.enable": false,
+  "javascript.nameSuggestions": false,
+  "typescript.quickSuggestionsForPaths": false,
+  "typescript.autoImportSuggestions.enabled": false,
+  "path-intellisense.mappings": {
+    "~": "${workspaceRoot}/src",
+    "common-components": "${workspaceRoot}/src/components",
+    "mock-setup": "${workspaceRoot}/mock-setup"
+  }
+}

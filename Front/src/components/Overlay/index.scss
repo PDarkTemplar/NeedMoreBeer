@@ -1,0 +1,13 @@
+@import 'imports.scss';
+
+.overlay {
+    z-index: 10000;
+    border-radius: inherit;
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(color(white), 0.8);
+}

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should not render loading 1`] = `
+<Loader
+  color="primary"
+  overlay={true}
+  overlayColor="white"
+  size="xl"
+  visible={false}
+/>
+`;
+
+exports[`should render loading 1`] = `
+<Loader
+  color="primary"
+  overlay={true}
+  overlayColor="white"
+  size="xl"
+  visible={true}
+/>
+`;

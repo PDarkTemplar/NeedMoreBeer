@@ -1,0 +1,32 @@
+$block-shadow: (
+    card:
+        (
+            0 0 calculate-rem(1) + rem 0 rgba(color(shadow-200), 0.24),
+            0 calculate-rem(1) + rem calculate-rem(1) + rem 0 rgba(color(shadow-200), 0.12)
+        ),
+    card-hover:
+        (
+            0 0 calculate-rem(1) + rem 0 rgba(color(shadow-200), 0.24),
+            0 calculate-rem(2) + rem calculate-rem(2) + rem 0 rgba(color(shadow-200), 0.12)
+        ),
+    dialog:
+        (
+            0 0 calculate-rem(1) + rem 0 rgba(color(shadow-200), 0.24),
+            0 calculate-rem(2) + rem calculate-rem(4) + rem 0 rgba(color(shadow-200), 0.24)
+        ),
+    modal:
+        (
+            0 0 calculate-rem(1) + rem 0 rgba(color(shadow-200), 0.24),
+            0 calculate-rem(4) + rem calculate-rem(8) + rem 0 rgba(color(shadow-200), 0.28)
+        ),
+    popup:
+        (
+            0 0 calculate-rem(1) + rem 0 rgba(color(shadow-200), 0.24),
+            0 calculate-rem(18) + rem calculate-rem(30) + rem 0 rgba(color(shadow-200), 0.5)
+        ),
+    board: (0 calculate-rem(10) + rem calculate-rem(30) + rem 0 rgba(color(shadow-100), 0.26))
+);
+
+@mixin shadow($key) {
+    box-shadow: map-get($block-shadow, $key);
+}

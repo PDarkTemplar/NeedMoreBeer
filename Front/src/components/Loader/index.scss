@@ -1,0 +1,38 @@
+@import 'imports.scss';
+
+.wrap{
+    border-radius: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.loader {
+    z-index: 20000;
+    @include icon('beer.svg', 120, 120);
+    animation: loaderFrames ease-in-out 1.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+}
+ 
+  @keyframes loaderFrames{
+    0% {
+      transform:  translate(-358px,0)  rotate(-45deg);
+      opacity: 0;
+    }
+    50% {
+      transform:  translate(0,0)  rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform:  translate(304px,0)  rotate(45deg);
+      opacity: 0;
+    }
+  }

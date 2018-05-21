@@ -1,0 +1,7 @@
+@mixin body-s() {
+    font-family: $font-family-text;
+    font-weight: font-weight(normal);
+    font-size: font-size(xxxs);
+    line-height: font-line-height(xxs);
+    letter-spacing: 0;
+}

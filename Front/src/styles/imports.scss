@@ -1,0 +1,26 @@
+$font-weight: (none: inherit, normal: 400, semibold: 500) !default;
+$font-size: (
+        xxxxl: 50,
+        xxxl: 40,
+        xxl: 30,
+        xl: 28,
+        l: 24,
+        m: 21,
+        s: 19,
+        xs: 17,
+        xxs: 15,
+        xxxs: 13,
+        xxxxs: 11
+    )
+    !default;
+$line-height: (xxxl: 56, xxl: 44, xl: 36, l: 32, m: 28, s: 24, xs: 22, xxs: 20, xxxs: 16) !default;
+$font-family-text: -apple-system, 'BlinkMacSystemFont', sans-serif !default;
+$font-family-header: -apple-system, 'BlinkMacSystemFont', sans-serif !default;
+$default-font-size: 16 !default;
+
+@import 'variables.scss';
+@import 'colors.scss';
+@import 'fonts.scss';
+@import 'functions.scss';
+@import 'shadows.scss';
+@import 'mixins.scss';
