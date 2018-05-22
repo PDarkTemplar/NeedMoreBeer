@@ -2,20 +2,16 @@
 
 exports[`should not render loading 1`] = `
 <Loader
-  color="primary"
+  noAnimation={false}
   overlay={true}
-  overlayColor="white"
-  size="xl"
   visible={false}
 />
 `;
 
 exports[`should render loading 1`] = `
 <Loader
-  color="primary"
+  noAnimation={false}
   overlay={true}
-  overlayColor="white"
-  size="xl"
   visible={true}
 />
 `;

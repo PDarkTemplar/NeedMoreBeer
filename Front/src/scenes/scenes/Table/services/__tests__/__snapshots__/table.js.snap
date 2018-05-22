@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`load next page 1`] = `
+Table {
+  "currentPage": 1,
+  "filter": Filter {
+    "filters": Object {
+      "abv": Object {
+        "name": "table:abv",
+        "value": "",
+      },
+      "ibu": Object {
+        "name": "table:ibu",
+        "value": "",
+      },
+      "name": Object {
+        "name": "table:name",
+        "value": "",
+      },
+    },
+  },
+  "loadedItems": Array [
+    Object {
+      "id": 1,
+    },
+    Object {
+      "id": 2,
+    },
+  ],
+  "loading": false,
+  "numberOfPage": 1559,
+  "order": Order {
+    "order": "name",
+    "sort": "asc",
+  },
+  "totalRows": 77930,
+}
+`;

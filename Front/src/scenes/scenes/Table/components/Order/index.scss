@@ -1,0 +1,32 @@
+@import 'imports.scss';
+
+.wrap {
+    display: flex;
+    padding: calculate-rem(15) + rem;
+
+    & > * {
+        margin-right: calculate-rem(15) + rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.direction {
+    margin-left: calculate-rem(10) + rem;
+    display: inline-block;
+    padding: calculate-rem(3) + rem;
+}
+
+.desc {
+    border: solid color(black);
+    border-width: 0 calculate-rem(3) + rem calculate-rem(3) + rem 0;
+    transform: rotate(45deg);
+}
+
+.asc {
+    border: solid color(black);
+    border-width: 0 calculate-rem(3) + rem calculate-rem(3) + rem 0;
+    transform: rotate(-135deg);
+}

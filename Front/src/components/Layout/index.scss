@@ -1,0 +1,33 @@
+@mixin generate-columns($columnNumber, $padding) {
+    @for $i from 1 through $columnNumber {
+        .col_#{$i} {
+            $width: ($i * 100% / $columnNumber);
+            width: 100%;
+            max-width: $width;
+            flex: 0 0 $width;
+            padding-left: calculate-rem($padding) + rem;
+            padding-right: calculate-rem($padding) + rem;
+            box-sizing: border-box;
+        }
+    }
+}
+
+@mixin generate-offset-columns($columnNumber) {
+    @for $i from 1 through $columnNumber {
+        .col-offset_#{$i} {
+            margin-left: ($i * 100% / $columnNumber);
+        }
+    }
+}
+
+.row {
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    margin-left: calculate-rem(-16) + rem;
+    margin-right: calculate-rem(-16) + rem;
+}
+
+@include generate-columns(12, 16);
+@include generate-offset-columns(12);
+

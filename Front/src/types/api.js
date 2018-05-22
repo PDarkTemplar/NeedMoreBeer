@@ -12,7 +12,11 @@ export type Beer = {
 };
 export type Glass = { id: number, name?: string };
 export type Label = { medium?: string, large?: string, icon?: string };
-export type TableResponseTableBeer = { data?: Array<TableBeer>, numberOfPages: number };
+export type TableResponseTableBeer = {
+    data?: Array<TableBeer>,
+    numberOfPages: number,
+    totalResults: number,
+};
 export type TableBeer = {
     id?: string,
     name?: string,

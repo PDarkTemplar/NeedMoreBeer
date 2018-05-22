@@ -1,0 +1,14 @@
+@import 'imports.scss';
+
+.wrap {
+    display: flex;
+    flex: 1 1 auto;
+    margin: calculate-rem(40) + rem;
+    background: color(gray-700);
+}
+
+.inner {
+    display: flex;
+    flex-flow: column;
+    flex: 1 0 auto;
+}

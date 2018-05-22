@@ -2,7 +2,7 @@
 // generated file
 import type { GlobalStore } from '~/types/globalStore';
 import { FetchResponseType, AxiosConfig } from '~/types/fetch';
-import type { Beer, Glass, TableResponseTableBeer } from '~/types/api';
+import type { Beer, TableResponseTableBeer } from '~/types/api';
 
 class ApiClient {
     globalStore: GlobalStore;
@@ -13,10 +13,6 @@ class ApiClient {
 
     detailsByIdGet(id: string, options?: AxiosConfig): FetchResponseType<Beer> {
         return this.globalStore.services.fetch.get(`${REST_UI_URL}/details/${id}`, options);
-    }
-
-    glassGet(options?: AxiosConfig): FetchResponseType<Array<Glass>> {
-        return this.globalStore.services.fetch.get(`${REST_UI_URL}/glass`, options);
     }
 
     tableGet(

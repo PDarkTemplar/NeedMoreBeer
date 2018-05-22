@@ -1,0 +1,13 @@
+{
+    "name": "Name",
+    "abv": "Abv",
+    "ibu": "Ibu",
+    "status": "Status",
+    "year": "Year",
+    "glass": "Glass",
+    "createDate": "Create date",
+    "createDateFormat": "Create date: {{createDate, M:MM/DD/YYYY}}",
+    "updateDate": "Update date",
+    "updateDateFormat": "Update date: {{updateDate, M:MM/DD/YYYY}}",
+    "search": "Search"
+}

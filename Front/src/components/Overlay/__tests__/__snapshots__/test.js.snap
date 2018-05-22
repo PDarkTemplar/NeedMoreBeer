@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should not render Overlay 1`] = `
+<AnimeTransition
+  enterAnim={
+    Object {
+      "duration": 200,
+      "easing": "linear",
+      "opacity": Array [
+        0,
+        1,
+      ],
+    }
+  }
+  exitAnim={
+    Object {
+      "duration": 200,
+      "easing": "linear",
+      "opacity": Array [
+        1,
+        0,
+      ],
+    }
+  }
+/>
+`;
+
+exports[`Should not render static Overlay 1`] = `
+<AnimeTransition
+  enterAnim={
+    Object {
+      "duration": 200,
+      "easing": "linear",
+      "opacity": Array [
+        0,
+        1,
+      ],
+    }
+  }
+  exitAnim={
+    Object {
+      "duration": 200,
+      "easing": "linear",
+      "opacity": Array [
+        1,
+        0,
+      ],
+    }
+  }
+/>
+`;
+
+exports[`Should render Overlay (white) 1`] = `
+<AnimeTransition
+  enterAnim={
+    Object {
+      "duration": 200,
+      "easing": "linear",
+      "opacity": Array [
+        0,
+        1,
+      ],
+    }
+  }
+  exitAnim={
+    Object {
+      "duration": 200,
+      "easing": "linear",
+      "opacity": Array [
+        1,
+        0,
+      ],
+    }
+  }
+>
+  <div
+    className="overlay"
+  />
+</AnimeTransition>
+`;
+
+exports[`Should render Overlay 1`] = `
+<AnimeTransition
+  enterAnim={
+    Object {
+      "duration": 200,
+      "easing": "linear",
+      "opacity": Array [
+        0,
+        1,
+      ],
+    }
+  }
+  exitAnim={
+    Object {
+      "duration": 200,
+      "easing": "linear",
+      "opacity": Array [
+        1,
+        0,
+      ],
+    }
+  }
+>
+  <div
+    className="overlay"
+  />
+</AnimeTransition>
+`;
+
+exports[`Should render static Overlay 1`] = `
+<AnimeTransition
+  enterAnim={
+    Object {
+      "duration": 200,
+      "easing": "linear",
+      "opacity": Array [
+        0,
+        1,
+      ],
+    }
+  }
+  exitAnim={
+    Object {
+      "duration": 200,
+      "easing": "linear",
+      "opacity": Array [
+        1,
+        0,
+      ],
+    }
+  }
+>
+  <div
+    className="overlay"
+  />
+</AnimeTransition>
+`;

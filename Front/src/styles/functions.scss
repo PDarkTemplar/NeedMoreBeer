@@ -38,6 +38,7 @@
     $collection: map-collect(
         $color-shadow,
         $color-text,
+        $color-gray,
         $color-basic
     );
     @if map-has-key($collection, $key) {

@@ -1,0 +1,8 @@
+@import 'imports.scss';
+
+.label {
+    display: block;
+    @include body-s();
+    color: color(text-700);
+    margin-bottom: calculate-rem(5) + rem;
+}

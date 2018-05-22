@@ -1,0 +1,9 @@
+@import 'imports.scss';
+
+.wrap {
+    margin: calculate-rem(63) + rem calculate-rem(15) + rem;
+}
+
+.item {
+    margin-bottom: calculate-rem(15) + rem;
+}

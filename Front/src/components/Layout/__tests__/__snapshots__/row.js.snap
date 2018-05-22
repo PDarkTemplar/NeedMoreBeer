@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render row (align start) 1`] = `
+<div
+  className="row"
+>
+  <Cell
+    size={12}
+  >
+    test
+  </Cell>
+</div>
+`;
+
+exports[`Should render row 1`] = `
+<div
+  className="row"
+>
+  <Cell
+    size={12}
+  >
+    test
+  </Cell>
+</div>
+`;
