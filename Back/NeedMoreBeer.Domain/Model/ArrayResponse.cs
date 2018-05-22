@@ -9,6 +9,7 @@ namespace NeedMoreBeer.Domain.Model
         public string Status { get; set; }
         public int NumberOfPages { get; set; }
         public int CurrentPage { get; set; }
+        public int TotalResults { get; set; }
         public List<T> Data { get; set; }
     }
 }

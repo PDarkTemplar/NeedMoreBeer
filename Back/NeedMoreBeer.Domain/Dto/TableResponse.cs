@@ -18,5 +18,9 @@ namespace NeedMoreBeer.Domain.Dto
         /// Number of pages
         /// </summary>
         public int NumberOfPages { get; set; }
+        /// <summary>
+        /// Total results
+        /// </summary>
+        public int TotalResults { get; set; }
     }
 }
