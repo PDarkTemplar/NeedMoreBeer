@@ -11,6 +11,7 @@ import { inject } from 'common-components/Hoc';
 import Router, { AnonymousRoute } from 'common-components/Router';
 
 import Table from '../../scenes/Table';
+import Details from '../../scenes/Details';
 
 type Props = {
     initialized: boolean,
@@ -28,6 +29,7 @@ class Bootstrap extends Component<Props> {
                     <Router>
                         <Switch>
                             <AnonymousRoute exact path={constants.paths.table} component={Table} />
+                            <AnonymousRoute path={constants.paths.details} component={Details} />
                             <Redirect to={constants.paths.table} />
                         </Switch>
                     </Router>

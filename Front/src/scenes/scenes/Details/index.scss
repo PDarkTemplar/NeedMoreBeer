@@ -1,0 +1,26 @@
+@import 'imports.scss';
+
+.wrap {
+    padding: calculate-rem(15) + rem;
+    display: flex;
+    flex-flow: column;
+    color: color(text-700);
+    @include body-s();
+}
+
+.img-wrap {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin-bottom: calculate-rem(10) + rem;
+}
+
+.img {
+    min-width: calculate-rem(256) + rem;
+    min-height: calculate-rem(256) + rem;
+    margin-right: calculate-rem(15) + rem;
+}
+
+.row {
+    margin-bottom: calculate-rem(10) + rem;
+}

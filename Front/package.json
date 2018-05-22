@@ -133,7 +133,7 @@
     "postcss-inline-svg": "^3.1.1",
     "postcss-loader": "^2.1.5",
     "postcss-scss": "^1.0.5",
-    "pre-push": "git+https://github.com/dflourusso/pre-push.git#ec4e2e55a5387283763befb88e0135e1ee26a7fc",
+    "pre-push": "^0.1.1",
     "prettier": "^1.12.1",
     "request": "^2.86.0",
     "request-promise-native": "^1.0.5",
