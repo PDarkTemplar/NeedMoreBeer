@@ -40,9 +40,6 @@
   "browserslist": [
     "last 2 versions"
   ],
-  "pre-push": [
-    "test"
-  ],
   "author": "",
   "license": "",
   "dependencies": {
@@ -133,7 +130,6 @@
     "postcss-inline-svg": "^3.1.1",
     "postcss-loader": "^2.1.5",
     "postcss-scss": "^1.0.5",
-    "pre-push": "^0.1.1",
     "prettier": "^1.12.1",
     "request": "^2.86.0",
     "request-promise-native": "^1.0.5",
